@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { GrAchievement } from "react-icons/gr";
 import { MdOutlineWorkOutline } from "react-icons/md";
 
@@ -7,13 +8,23 @@ const AboutMe = () => {
       <div className="h-full max-w-full flex flex-col items-center justify-evenly">
         <h1 className="text-6xl font-bold ">About Me</h1>
         <div className="flex flex-col md:flex-row justify-around items-center w-full">
-          <div className="h-[40%] md:h-fit md:w-[50%] flex flex-col md:flex-row justify-center">
+          <motion.div
+            className="h-[40%] md:h-fit md:w-[50%] flex flex-col md:flex-row justify-center"
+            whileInView={{
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                ease: [0.43, 0.13, 0.23, 0.96],
+              },
+            }}
+            initial={{ opacity: 0 }}
+          >
             <img
               src="/images/profile.jpg"
               alt="profile_pic"
               className="rounded-3xl w-52"
             />
-          </div>
+          </motion.div>
           <div className="md:w-[60%] px-10 md:px-20 mt-2">
             <div className="flex justify-between text-xl gap-10 mb-10">
               <div className="border border-black dark:border-white rounded-lg w-full p-5 flex flex-col justify-center items-center">

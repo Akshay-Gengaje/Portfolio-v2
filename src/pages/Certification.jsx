@@ -46,10 +46,10 @@ const Certification = () => {
           modules={[EffectCoverflow, Pagination]}
         >
           {images.map((image, index) => (
-            <SwiperSlide className="h-[60vh] w-fit" key={index}>
+            <SwiperSlide className="h-[40vh] lg:h-[60vh] lg:w-fit" key={index}>
               <img
                 src={"images" + `${image}`}
-                className="w-fit h-full object-contain"
+                className=" lg:w-full h-full object-contain"
                 alt={image}
               />
             </SwiperSlide>

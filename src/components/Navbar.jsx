@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDev } from "react-icons/fa";
 import { useScroll } from "../hooks/useScrollToSection"; // Import the custom hook
 
 const navlinks = [
@@ -36,9 +36,15 @@ const Navbar = () => {
       </div>
       {/* Social Media Icons */}
       <div className="fixed bottom-16 left-5 flex flex-row gap-3 justify-center items-center text-gray-500 text-xl">
-        <FaGithub className="hover:text-[#00E5FF] hover:cursor-pointer" />
-        <FaLinkedin className="hover:text-[#00E5FF] hover:cursor-pointer" />
-        <FaInstagram className="hover:text-[#00E5FF] hover:cursor-pointer" />
+        <a href="https://github.com/Akshay-Gengaje" target="_blank">
+          <FaGithub className="hover:text-[#00E5FF] hover:cursor-pointer" />
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-gengaje/" target="_blank">
+          <FaLinkedin className="hover:text-[#00E5FF] hover:cursor-pointer" />
+        </a>
+        <a href="https://dev.to/akshay_gengaje">
+          <FaDev className="hover:text-[#00E5FF] hover:cursor-pointer" />
+        </a>
       </div>
     </div>
   );

@@ -6,19 +6,20 @@ import {
   SiExpress,
   SiMysql,
   SiMongodb,
+  SiSpringboot,
 } from "react-icons/si";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaReact, FaJava, FaGithub } from "react-icons/fa6";
 const SkillSets = [
-  {
-    name: "HTML5",
-    icon: <IoLogoHtml5 />,
-  },
-  {
-    name: "CSS3",
-    icon: <IoLogoCss3 />,
-  },
+  // {
+  //   name: "HTML5",
+  //   icon: <IoLogoHtml5 />,
+  // },
+  // {
+  //   name: "CSS3",
+  //   icon: <IoLogoCss3 />,
+  // },
   {
     name: "Tailwind CSS",
     icon: <SiTailwindcss />,
@@ -48,6 +49,10 @@ const SkillSets = [
     icon: <FaJava />,
   },
   {
+    name: "Spring Boot",
+    icon: <SiSpringboot />,
+  },
+  {
     name: "MySQL",
     icon: <SiMysql />,
   },
@@ -65,7 +70,7 @@ const Skills = () => {
   return (
     <div className="h-screen w-full">
       <div className=" h-full max-w-full flex flex-col items-center justify-evenly">
-        <h1 className="text-6xl font-bold ">What I Do</h1>
+      <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">What I Do</h1>
         <div className="flex flex-wrap justify-center w-[80%] text-4xl md:text-6xlw lg:text-8xl  gap-10">
           {SkillSets.map((skills, index) => (
             <div className=" flex flex-col items-center w-fit " key={index}>

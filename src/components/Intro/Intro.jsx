@@ -3,7 +3,7 @@ const Intro = () => {
   return (
     <div className="h-screen w-full flex flex-col items-start justify-center font-poppins ">
       <div className="px-10 md:px-20 lg:px-52 w-full">
-        <h3 className="uppercase text-2xl mb-5 font-medium tracking-widest animate-languageAnimation ">
+        <h3 className="uppercase text-2xl mb-5 font-medium tracking-widest ">
           Akshay Gengaje
         </h3>
         <h1 className="capitalize text-4xl md:text-5xl lg:text-6xl font-bold flex items-center gap-5">
@@ -15,7 +15,7 @@ const Intro = () => {
               delay: 0.1,
             }}
           >
-            Frontend Developer
+            React JS Developer
           </motion.h1>
 
           <span className="flex-1 max-w-[20%] border-b-2 dark:border-gray-200 border-gray-500" />
@@ -32,7 +32,7 @@ const Intro = () => {
             <span className="text-gray-700 dark:text-gray-400 font-extrabold ">
               +&nbsp;
             </span>
-            MERN Stack
+            Full Stack Developer
           </motion.span>
         </h1>
       </div>

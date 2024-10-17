@@ -6,7 +6,7 @@ const Intro = () => {
         <h3 className="uppercase text-2xl mb-5 font-medium tracking-widest ">
           Akshay Gengaje
         </h3>
-        <h1 className="capitalize text-4xl md:text-5xl lg:text-6xl font-bold flex items-center gap-5">
+        <h1 className="capitalize text-2xl md:text-5xl lg:text-6xl font-bold flex items-center gap-5">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -20,7 +20,7 @@ const Intro = () => {
 
           <span className="flex-1 max-w-[20%] border-b-2 dark:border-gray-200 border-gray-500" />
         </h1>
-        <h1 className="capitalize text-4xl md:text-5xl lg:text-6xl font-bold mt-2">
+        <h1 className="capitalize text-2xl md:text-5xl lg:text-6xl font-bold mt-2">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

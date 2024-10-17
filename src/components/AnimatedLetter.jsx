@@ -4,7 +4,7 @@ const AnimatedLetter = ({ letter }) => {
   const beforeStyle = {
     content: `"[${letter}]"`,
   };
-  const { scrollToSection, activeSection } = useScroll(); 
+  const { scrollToSection, activeSection } = useScroll();
   return (
     <div
       className="relative inline-block"

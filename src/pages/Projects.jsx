@@ -111,7 +111,7 @@ const Projects = () => {
   return (
     <div className="h-screen">
       <div className="h-full max-w-full flex flex-col items-center justify-evenly py-10">
-      <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">
+        <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">
           Projects
         </h1>
         <ThemeProvider value={theme}>

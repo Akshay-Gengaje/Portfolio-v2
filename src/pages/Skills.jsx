@@ -70,7 +70,9 @@ const Skills = () => {
   return (
     <div className="h-screen w-full">
       <div className=" h-full max-w-full flex flex-col items-center justify-evenly">
-      <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">What I Do</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">
+          What I Do
+        </h1>
         <div className="flex flex-wrap justify-center w-[80%] text-4xl md:text-6xlw lg:text-8xl  gap-10">
           {SkillSets.map((skills, index) => (
             <div className=" flex flex-col items-center w-fit " key={index}>

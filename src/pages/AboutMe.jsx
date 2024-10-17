@@ -4,7 +4,7 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 
 const AboutMe = () => {
   return (
-    <div className="max-h-screen md:h-screen w-full overflow-hidden">
+    <div className="md:max-h-screen md:h-screen w-full overflow-hidden mb-20 md:mb-0">
       <div className="h-full max-w-full flex flex-col items-center justify-evenly">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">
           About Me

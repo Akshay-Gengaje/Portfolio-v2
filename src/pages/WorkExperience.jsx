@@ -3,7 +3,7 @@ import React from "react";
 const WorkExperience = () => {
   const experiences = [
     {
-      role: "Junior Software Developer",
+      role: "Software Developer Intern",
       company: "Persausive Technologies",
       location: "Pune",
       duration: "03/2023 - Present",
@@ -23,7 +23,7 @@ const WorkExperience = () => {
   return (
     <div className="h-full md:h-screen w-full">
       <div className=" h-full max-w-full flex flex-col items-center justify-evenly">
-        <h1 className="text-4xl md:text-6xl font-bold text-center mb-2">
+        <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">
           Work Experience
         </h1>
         <div className="flex flex-wrap justify-center px-2 w-full md:w-[80%] text-4xl md:text-6xlw lg:text-8xl gap-10 md:max-h-[calc(100vh-35vh)] md:overflow-y-auto">

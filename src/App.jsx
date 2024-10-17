@@ -8,8 +8,9 @@ import WorkExperience from "./pages/WorkExperience";
 import { motion } from "framer-motion";
 import { ScrollProvider, useScroll } from "./hooks/useScrollToSection"; // Import the provider and hook
 import Certification from "./pages/Certification";
+import Footer from "./components/Footer";
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => setDarkMode(!darkMode);
   return (
     <ScrollProvider>
@@ -59,6 +60,7 @@ const Sections = () => {
       <div ref={sectionRefs.certification} data-section="certification">
         <Certification />
       </div>
+      <Footer />
     </>
   );
 };

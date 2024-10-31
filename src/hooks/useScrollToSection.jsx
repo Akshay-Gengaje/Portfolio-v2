@@ -1,6 +1,4 @@
-// useScrollToSection.js
 import { createContext, useContext, useRef, useState, useEffect } from "react";
-import Certification from "../pages/Certification";
 
 // Create context for scroll-to-section functionality
 const ScrollContext = createContext(null);
@@ -16,15 +14,13 @@ export const useScrollToSection = () => {
     certification: useRef(null),
   };
 
-  const [activeSection, setActiveSection] = useState("intro"); // Track the active section
+  const [activeSection, setActiveSection] = useState("intro");
 
-  // Function to scroll to the desired section
   const scrollToSection = (section) => {
     sectionRefs[section]?.current?.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(section); // Manually set active section when a user clicks
+    setActiveSection(section);
   };
 
-  // Use IntersectionObserver to detect the currently visible section
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -35,7 +31,7 @@ export const useScrollToSection = () => {
           }
         });
       },
-      { threshold: 0.5 } // Adjust this threshold for when the section is considered "in view"
+      { threshold: 0.5 }
     );
 
     Object.keys(sectionRefs).forEach((section) => {
@@ -56,7 +52,6 @@ export const useScrollToSection = () => {
   return { sectionRefs, scrollToSection, activeSection };
 };
 
-// Custom hook to access the scroll context in any component
 export const useScroll = () => {
   const context = useContext(ScrollContext);
   if (!context) {
@@ -65,7 +60,6 @@ export const useScroll = () => {
   return context;
 };
 
-// Provider component to wrap the application
 export const ScrollProvider = ({ children }) => {
   const value = useScrollToSection();
   return (

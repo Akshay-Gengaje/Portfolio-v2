@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 const Intro = () => {
   return (
-    <div className="h-screen w-full flex flex-col items-start justify-center font-poppins ">
+    <div className="h-screen w-full flex flex-col items-start justify-center font-poppins">
       <div className="px-10 md:px-20 lg:px-52 w-full">
         <h3 className="uppercase text-2xl mb-5 font-medium tracking-widest ">
           Akshay Gengaje

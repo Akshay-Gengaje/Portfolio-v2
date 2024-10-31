@@ -8,8 +8,6 @@ import {
   SiMongodb,
   SiSpringboot,
 } from "react-icons/si";
-import { IoLogoHtml5 } from "react-icons/io5";
-import { IoLogoCss3 } from "react-icons/io";
 import { FaReact, FaJava, FaGithub } from "react-icons/fa6";
 const SkillSets = [
   // {

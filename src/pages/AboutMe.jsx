@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { GrAchievement } from "react-icons/gr";
-import { MdOutlineWorkOutline } from "react-icons/md";
 
 const AboutMe = () => {
   return (

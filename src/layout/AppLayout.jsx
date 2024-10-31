@@ -1,21 +1,28 @@
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-
-const AppLayout = ({ toggleDarkMode, darkMode, children }) => {
+import { motion } from "framer-motion";
+const AppLayout = ({ toggleDarkMode, darkMode }) => {
   return (
-    <div className="grid grid-cols-12">
+    <motion.div
+      className="dark:bg-[#111111] min-h-screen bg-homepage bg-no-repeat bg-right"
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        duration: 0.5,
+        delay: 0.25,
+      }}
+    >
       <div className="col-span-12 h-20 lg:fixed w-full top-0 left-0">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
-      <div className="hidden md:block md:col-span-2 lg:col-span-1 mt-24">
-        <div className="fixed">
-          <Navbar />
-        </div>
+      <div className="col-span-12 md:col-span-10 lg:col-span-11 dark:text-white text-black">
+        <Outlet />
       </div>
-      <div className="col-span-12 md:col-span-10 lg:col-span-11  dark:text-white text-black">
-        {children}
-      </div>
-    </div>
+    </motion.div>
   );
 };
 

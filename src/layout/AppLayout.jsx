@@ -16,7 +16,7 @@ const AppLayout = ({ toggleDarkMode, darkMode }) => {
         delay: 0.25,
       }}
     >
-      <div className="col-span-12 h-20 lg:fixed w-full top-0 left-0">
+      <div className="col-span-12 h-20 w-full top-0 left-0">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
       <div className="col-span-12 md:col-span-10 lg:col-span-11 dark:text-white text-black">

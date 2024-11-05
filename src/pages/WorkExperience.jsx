@@ -3,12 +3,12 @@ import React from "react";
 const WorkExperience = () => {
   const experiences = [
     {
-      role: "Software Developer Intern",
-      company: "Persausive Technologies",
+      role: "Software Developer",
+      company: "Woxi Software LLP",
       location: "Pune",
       duration: "03/2023 - Present",
       tasks:
-        "Developed 3 web apps using React JS to deliver data insights and improve decision-making, utilized data visualization to present complex information clearly, integrated REST APIs to streamline data exchange, resolved performance bottlenecks to enhance speed and user experience, and assisted in troubleshooting performance, security, and UX issues.",
+        "Developed dynamic web applications using React JS and Spring Boot to deliver actionable data insights, empowering clients to make informed business decisions. Simplified complex datasets through advanced data visualization, helping clients identify trends and growth opportunities. Integrated REST APIs to enhance data exchange and platform efficiency, while proactively diagnosing performance issues to improve speed, responsiveness, and user experience. Additionally, supported troubleshooting efforts across performance, security, and user interface areas, bolstering system reliability and client confidence.",
     },
     {
       role: "Frontend Development Intern",

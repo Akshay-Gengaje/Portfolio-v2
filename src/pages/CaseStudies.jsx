@@ -85,7 +85,7 @@ const sections = [
         </li>
       </ul>
     ),
-    image: "/images/technology.jpg",
+    image: "/images/case_studies/techstack.jpg",
   },
   {
     title: "Development Process",
@@ -143,7 +143,7 @@ const CaseStudies = () => {
         >
           {/* Image Container */}
           <div
-            className="w-full md:w-1/2 h-96 bg-contain bg-center bg-no-repeat border border-black"
+            className="w-full md:w-1/2 h-96 bg-contain bg-center bg-no-repeat"
             style={{
               backgroundImage: `url(${section.image})`,
               // backgroundImage: 'url("/images/case_studies/dashboard.png")',
